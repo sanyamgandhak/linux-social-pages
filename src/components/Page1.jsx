@@ -2,14 +2,13 @@ import React from 'react'
 import { Grid, Typography , Button , ImageList, ImageListItem} from '@mui/material'
 import { Box, ThemeProvider, createTheme } from '@mui/system';
 import amazon from '../assests/amazon.png'
-// import uber from '../assests/uber.png'
+import uber from '../assests/uber.png'
 import google from '../assests/google.png'
 import servicenow from '../assests/servicenow.png'
 import walmart from '../assests/walmart.png'
 import adobe from '../assests/adobe.png'
 
 const theme = createTheme({
-    marginTop:'20px',
     palette: {
       text: {
         color: '#cc1016',
@@ -31,23 +30,23 @@ export default function Page1(){
 <Grid container xs={4} style={{justifyContent:'space-between',marginLeft:'20px'}}>
     <Grid item >
 
-<Typography  style={{color:'#cc1016',fontWeight:'600'}}>LINUXSOCIALS</Typography>
+<Typography  style={{color:'#cc1016',fontWeight:'600',fontSize:'18px'}}>LINUXSOCIALS</Typography>
     </Grid> 
 
-    <Grid item >
-   
-   <Typography>DSA-CheatSheet</Typography>
+    <Grid item  >
+   <Typography sx={{fontSize:'15px' , marginTop:'3px'}}>DSA-CheatSheet</Typography>
    </Grid>
     <Grid item>
-    <Typography>Community</Typography>
+    <Typography sx={{fontSize:'15px', marginTop:'3px'}}>Community</Typography>
    </Grid>
     <Grid item>
-    <Typography>Batches</Typography>
+    <Typography sx={{fontSize:'15px', marginTop:'3px'}}>Batches</Typography>
    </Grid>
+  
 
     
 </Grid>
-<Grid container xs={7} style={{justifyContent:'flex-end'}}>
+<Grid container xs={7} style={{justifyContent:'flex-end',marginLeft:'50px'}}>
     <Grid item  >
         <Button variant='contained' style={{backgroundColor:'#cc1016'}}>Login</Button>
     </Grid>
@@ -56,10 +55,10 @@ export default function Page1(){
 <Grid container  style={{marginTop:'90px' }} >
 <Grid container item xs={6} style={{marginLeft:'20px'}}>
     <Grid container item xs={12}>
-        <Typography style={{fontSize:'16px',color:'#333333',fontWeight:'500'}}>IN EVERY</Typography>
+        <Typography style={{fontSize:'14px',color:'#333333',fontWeight:'500'}}>IN EVERY</Typography>
     </Grid>
     <Grid container item xs={12} style={{marginTop:'20px'}}>
-        <Typography style={{fontWeight:'600',fontFamily:'arial'}}>Interview Preparation Batch</Typography>
+        <Typography style={{fontWeight:'600',fontFamily:'arial',fontSize:'23px'}}>Interview Preparation Batch</Typography>
     </Grid>
     <Grid container item xs={10} style={{marginTop:'20px'}}>
         <Typography style={{color:'#555454'}}>Learn Data Structures and Alogrithm along with System Design, DevOps and Cloud Computing for a <b>complete SDE stack</b> at INR 25,000/-</Typography>
@@ -114,38 +113,20 @@ export default function Page1(){
 <Grid container item xs={5} direction='column' justifyContent='center' alignContent='flex-end'>
     
     <Grid item alignContent='center'>
-    <Box mb={2} >
+    <Typography mb={2} ml={16}>
         With Placements In
-    </Box>
+    </Typography>
     </Grid>
     <Grid item >
-        <Grid item container justifyContent='space-between'>
-        
-       
+     <Grid item container justifyContent='space-between'>
+    
     <img width={50} height={20} src={amazon} style={{marginTop:'4px'}} alt="No Resume Found GIF" />
-    {/* <img width={40} height={17} src={uber} alt="No Resume Found GIF" /> */}
+    <img width={40} height={17} src={uber} alt="No Resume Found GIF" />
     <img width={50} height={20} src={adobe} alt="No Resume Found GIF" />
     <img width={50} height={20} src={walmart} alt="No Resume Found GIF" />
     <img width={50} height={20} src={servicenow} alt="No Resume Found GIF" />
     <img width={50} height={20} src={google}  style={{marginTop:'2px'}} alt="No Resume Found GIF" />
-    {/* <img width={60} height={20} src={google} alt="No Resume Found GIF" /> */}
-        </Grid>
-       
- {/* <ImageList cols={4} sx={{ width: 300, height: 25 }}>
-    <ImageListItem col={1}>
-    <img width={60} height={15} src={amazon} alt="No Resume Found GIF" />
-    </ImageListItem>  <ImageListItem>
-    <img width={60} height={15} src={amazon} alt="No Resume Found GIF" />
-    </ImageListItem>  <ImageListItem>
-    <img width={60} height={15} src={amazon} alt="No Resume Found GIF" />
-    </ImageListItem>  <ImageListItem>
-    <img width={60} height={15} src={amazon} alt="No Resume Found GIF" />
-    </ImageListItem>
- </ImageList> */}
-
-
-
-
+    </Grid>
     </Grid> 
     <Grid item style={{marginTop:'15px'}}>
    
